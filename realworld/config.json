@@ -1,0 +1,6 @@
+{ 
+ "root": "/home/vagrant/Coding/thesis/donatello/realworld/",
+ "contentDir": "/home/vagrant/Coding/thesis/donatello/realworld/www/",
+ "servicesDir": "/home/vagrant/Coding/thesis/donatello/realworld/services/",
+ "routes" : "/home/vagrant/Coding/thesis/donatello/realworld/routes.json"
+}

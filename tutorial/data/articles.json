@@ -1,0 +1,28 @@
+{
+"articles": [
+{
+"id": 1,
+"author": {
+"id": 1,
+"name": "Eric Simons",
+"image": "http://i.imgur.com/Qr71crq.jpg"
+},
+"title": "How to build webapps that scale",
+"likes": 29,
+"content": "This is the description for the post.",
+"date": "1/20/2021"
+},
+{
+"id": 2,
+"author": {
+"id": 2,
+"name": "Albert Pai",
+"image": "http://i.imgur.com/N4VcUeJ.jpg"
+},
+"title": "The song you won’t ever stop singing. No matter how hard you try.",
+"likes": 32,
+"content": "This is the description for the post.",
+"date": "1/23/2021"
+}
+]
+}

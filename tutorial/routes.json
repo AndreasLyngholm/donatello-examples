@@ -1,0 +1,21 @@
+{
+	"welcome": {
+		"service":"welcome.ol"
+	},
+	"hello-world": {
+		"service": "hello-world.ol"
+	},
+	"articles": {
+		"service": "articles.ol"
+	},
+	"articles/{id}": {
+		"service": "article.ol",
+		"data": [
+			{
+				"identifier": "id",
+				"source": "data/articles.json",
+				"variable": "article"
+			}
+		]
+	}
+}

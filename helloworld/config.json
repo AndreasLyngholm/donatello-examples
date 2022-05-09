@@ -1,0 +1,6 @@
+{ 
+ "root": "/home/vagrant/Coding/thesis/donatello/helloworld/",
+ "contentDir": "/home/vagrant/Coding/thesis/donatello/helloworld/www/",
+ "servicesDir": "/home/vagrant/Coding/thesis/donatello/helloworld/services/",
+ "routes" : "/home/vagrant/Coding/thesis/donatello/helloworld/routes.json"
+}

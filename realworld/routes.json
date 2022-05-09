@@ -1,0 +1,89 @@
+{
+    "": {
+        "service": "home.ol",
+        "data": [
+            {
+                "identifier": "token",
+                "source": "cookie",
+                "variable": "token"
+            }
+        ]
+    },
+    "test": {
+        "service": "test.ol"
+    },
+    "editor": {
+        "service": "create_article.ol",
+        "data": [
+            {
+                "identifier": "token",
+                "source": "cookie",
+                "variable": "token"
+            }
+        ]
+    },
+    "editor/{slug}": {
+        "service": "edit_article.ol",
+        "data": [
+            {
+                "identifier": "slug",
+                "variable": "slug"
+            },
+            {
+                "identifier": "token",
+                "source": "cookie",
+                "variable": "token"
+            }
+        ]
+    },
+    "settings": {
+        "service": "settings.ol",
+        "data": [
+            {
+                "identifier": "token",
+                "source": "cookie",
+                "variable": "token"
+            }
+        ]
+    },
+    "article/{slug}": {
+        "service": "article.ol",
+        "data": [
+            {
+                "identifier": "slug",
+                "variable": "slug"
+            },
+            {
+                "identifier": "token",
+                "source": "cookie",
+                "variable": "token"
+            }
+        ]
+    },
+    "profile/{username}": {
+        "service": "profile.ol",
+        "data": [
+            {
+                "identifier": "username",
+                "variable": "username"
+            },
+            {
+                "identifier": "token",
+                "source": "cookie",
+                "variable": "token"
+            }
+        ]
+    },
+    "login": {
+        "service": "login.ol"
+    },
+    "session": {
+        "service": "session.ol"
+    },
+    "register": {
+        "service": "register.ol"
+    },
+    "logout": {
+        "service": "logout.ol"
+    }
+}
