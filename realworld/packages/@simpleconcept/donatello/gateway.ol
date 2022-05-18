@@ -1,13 +1,11 @@
 from @simpleconcept.donatello.GatewayInterfaceModule import GatewayInterface
 from @simpleconcept.donatello.PageInterfaceModule import PageInterface
 from @simpleconcept.donatello.DonatelloInterfaceModule import DonatelloInterface
-from types.Binding import Binding
 
 from runtime import Runtime
 from file import File
 from console import Console
 from string_utils import StringUtils
-from json_utils import JsonUtils
 from uri_templates import UriTemplates
 
 /// Configuration parameters
@@ -35,7 +33,6 @@ service Gateway( params:Params ) {
     embed Console as Console
     embed StringUtils as StringUtils
     embed UriTemplates as UriTemplates
-    embed JsonUtils as JsonUtils
 
     inputPort GatewayPort {
         location: params.location
@@ -176,7 +173,7 @@ service Gateway( params:Params ) {
                                 foreach( d : jd ) {
                                     for( u in jd.(d) ) {
                                         if(u.(data.identifier) == variables.("{" + data.identifier + "}")) {
-                                            params.(data.variable) << u
+                                            params.(data.param) << u
                                         }
                                     }
                                 }
@@ -278,6 +275,8 @@ service Gateway( params:Params ) {
                     file.format = "text"
                     format = "html"
 
+                    setCacheHeaders
+
                     readFile@File( file )( response )
 
                     with( decoratedResponse ) {
@@ -309,6 +308,8 @@ service Gateway( params:Params ) {
                         } else {
                             file.format = format = "binary"
                         }
+
+                        setCacheHeaders
 
                         readFile@File( file )( response )
 

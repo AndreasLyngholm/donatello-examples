@@ -1,5 +1,5 @@
 {
-   "name": "test",
+   "name": "realworld",
    "description": "",
    "author": "",
    "version": "1.0.0",
@@ -11,7 +11,7 @@
    },
    "dependencies": {
       "npm": {
-         "@simpleconcept/donatello": "1.1.0"
+         "@simpleconcept/donatello": "1.2.8"
       }
    }
 }

@@ -1,76 +1,73 @@
 {
     "": {
         "service": "home.ol",
-        "data": [
+        "parameters": [
             {
                 "identifier": "token",
                 "source": "cookie",
-                "variable": "token"
+                "param": "token"
             }
         ]
     },
-    "test": {
-        "service": "test.ol"
-    },
     "editor": {
         "service": "create_article.ol",
-        "data": [
+        "parameters": [
             {
                 "identifier": "token",
                 "source": "cookie",
-                "variable": "token"
+                "param": "token"
             }
         ]
     },
     "editor/{slug}": {
         "service": "edit_article.ol",
-        "data": [
+        "parameters": [
             {
                 "identifier": "slug",
-                "variable": "slug"
+                "param": "slug"
             },
             {
                 "identifier": "token",
                 "source": "cookie",
-                "variable": "token"
+                "param": "token"
             }
         ]
     },
     "settings": {
         "service": "settings.ol",
-        "data": [
+        "parameters": [
             {
                 "identifier": "token",
                 "source": "cookie",
-                "variable": "token"
+                "param": "token"
             }
         ]
     },
     "article/{slug}": {
         "service": "article.ol",
-        "data": [
+        "parameters": [
             {
                 "identifier": "slug",
-                "variable": "slug"
+                "param": "slug"
             },
             {
                 "identifier": "token",
                 "source": "cookie",
-                "variable": "token"
+                "param": "token"
             }
         ]
     },
     "profile/{username}": {
         "service": "profile.ol",
-        "data": [
+        "parameters": [
             {
                 "identifier": "username",
-                "variable": "username"
+                "param": "username"
             },
             {
                 "identifier": "token",
                 "source": "cookie",
-                "variable": "token"
+                "param": "token"
             }
         ]
     },
