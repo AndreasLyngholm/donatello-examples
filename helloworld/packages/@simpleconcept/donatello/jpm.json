@@ -1,0 +1,29 @@
+{
+   "name": "@simpleconcept/donatello",
+   "description": "A dynamic web server written in Jolie.",
+   "author": {
+      "name": "Andreas Lyngholm Poulsen",
+      "email": "andreas@simpleconcept.dk",
+      "url": "https://simpleconcept.dk"
+   },
+   "version": "1.2.8",
+   "license": "LGPL-2.1-only",
+   "keywords": [
+      "jolie",
+      "microservices",
+      "web server"
+   ],
+   "main": "launcher.ol",
+   "bin": {
+      "donatello": "./launcher.ol",
+      "donatello-init": "./init.ol"
+   },
+   "distJar": "donatello-1.0.3.jar",
+   "dependencies": {
+      "mvn": {
+         "com.github.rjeschke:txtmark": "0.13",
+         "org.antlr:antlr4-runtime": "4.9.3"
+      }
+   },
+   "mvnPeers": {}
+}

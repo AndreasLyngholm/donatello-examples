@@ -1,0 +1,12 @@
+{
+   "license": "ISC",
+   "author": "",
+   "name": "Donatello Project",
+   "description": "",
+   "version": "1.0.0",
+   "dependencies": {
+      "npm": {
+         "@simpleconcept/donatello": "1.2.8"
+      }
+   }
+}

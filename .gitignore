@@ -1,1 +1,8 @@
 realworld/services/*
+realworld/.tmp
+
+helloworld/services/*
+helloworld/.tmp
+
+my-project/services/*
+my-project/.tmp

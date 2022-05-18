@@ -1,5 +1,8 @@
 {
-    "": {
-        "service": "helloworld.ol"
-    }
+	"welcome": {
+		"service":"welcome.ol"
+	},
+	"hello-world": {
+		"service": "hello-world.ol"
+	}
 }

@@ -10,11 +10,11 @@
 	},
 	"articles/{id}": {
 		"service": "article.ol",
-		"data": [
+		"parameters": [
 			{
 				"identifier": "id",
 				"source": "data/articles.json",
-				"variable": "article"
+				"param": "article"
 			}
 		]
 	}
