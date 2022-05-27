@@ -1,6 +1,5 @@
 ${ use service ..app.api }
 ${param token?:undefined}
-${param currentUrl:string}
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,7 +21,7 @@ ${param currentUrl:string}
         <ul class="nav navbar-nav pull-xs-right">
             <li class="nav-item">
                 <a class="nav-link 
-                    ${ if currentUrl == "" }
+                    ${ if param.url == "" }
                         active
                     ${ endif }
                 " href="/">Home</a>
@@ -31,13 +30,13 @@ ${param currentUrl:string}
             ${ if isAuth == false }
                 <li class="nav-item">
                     <a class="nav-link
-                        ${ if currentUrl == "login" }
+                        ${ if param.url == "login" }
                             active
                         ${ endif }
                     " href="/login">Sign in</a>
                 </li>
                 <li class="nav-item
-                    ${ if currentUrl == "register" }
+                    ${ if param.url == "register" }
                         active
                     ${ endif }
                 ">
@@ -46,7 +45,7 @@ ${param currentUrl:string}
             ${else}
                 <li class="nav-item">
                     <a class="nav-link
-                        ${ if currentUrl == "editor" }
+                        ${ if param.url == "editor" }
                             active
                         ${ endif }
                     " href="/editor">
@@ -55,7 +54,7 @@ ${param currentUrl:string}
                 </li>
                 <li class="nav-item">
                     <a class="nav-link
-                        ${ if currentUrl == "settings" }
+                        ${ if param.url == "settings" }
                             active
                         ${ endif }
                     " href="/settings">
@@ -64,7 +63,7 @@ ${param currentUrl:string}
                 </li>
                 ${ me@Api(token)(user) }
                 <li class="nav-item
-                    ${ if currentUrl == "settings" }
+                    ${ if param.url == "settings" }
                         active
                     ${ endif }
                 ">
