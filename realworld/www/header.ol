@@ -1,5 +1,6 @@
 ${ use service ..app.api }
 ${param token?:undefined}
+${param currentUrl:string}
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,7 +22,7 @@ ${param token?:undefined}
         <ul class="nav navbar-nav pull-xs-right">
             <li class="nav-item">
                 <a class="nav-link 
-                    ${ if param.url == "" }
+                    ${ if currentUrl == "" }
                         active
                     ${ endif }
                 " href="/">Home</a>
@@ -30,13 +31,13 @@ ${param token?:undefined}
             ${ if isAuth == false }
                 <li class="nav-item">
                     <a class="nav-link
-                        ${ if param.url == "login" }
+                        ${ if currentUrl == "login" }
                             active
                         ${ endif }
                     " href="/login">Sign in</a>
                 </li>
                 <li class="nav-item
-                    ${ if param.url == "register" }
+                    ${ if currentUrl == "register" }
                         active
                     ${ endif }
                 ">
@@ -45,7 +46,7 @@ ${param token?:undefined}
             ${else}
                 <li class="nav-item">
                     <a class="nav-link
-                        ${ if param.url == "editor" }
+                        ${ if currentUrl == "editor" }
                             active
                         ${ endif }
                     " href="/editor">
@@ -54,7 +55,7 @@ ${param token?:undefined}
                 </li>
                 <li class="nav-item">
                     <a class="nav-link
-                        ${ if param.url == "settings" }
+                        ${ if currentUrl == "settings" }
                             active
                         ${ endif }
                     " href="/settings">
@@ -63,7 +64,7 @@ ${param token?:undefined}
                 </li>
                 ${ me@Api(token)(user) }
                 <li class="nav-item
-                    ${ if param.url == "settings" }
+                    ${ if currentUrl == "settings" }
                         active
                     ${ endif }
                 ">

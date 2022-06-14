@@ -1,6 +1,6 @@
 ${use service ..app.api }
 ${param feed:undefined }
-${param token?:string }
+${param token?:undefined }
 ${param tag?:undefined }
 
 ${ if feed == null }

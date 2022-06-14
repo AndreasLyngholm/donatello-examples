@@ -11,7 +11,7 @@
    },
    "dependencies": {
       "npm": {
-         "@simpleconcept/donatello": "1.2.8"
+         "@simpleconcept/donatello": "1.2.9"
       }
    }
 }
